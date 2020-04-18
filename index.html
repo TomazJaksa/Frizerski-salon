@@ -7,14 +7,107 @@
     <title>Frizerski salon</title>
     <link href="css/bootstrap.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="javascript/bootstrap.js"></script>
+    <script>
+      $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </head>
   <body>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
+
+      <nav class="navbar navbar-dark navbar-expand-md bg-dark">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Vesna</span>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav" type="button" name="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="mainNav">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link active" href="#">Domov</a>
+              <a class="nav-item nav-link" href="#">O Vesni</a>
+              <a class="nav-item nav-link" href="#">Trening striženja in britja</a>
+              <a class="nav-item nav-link" href="#">Zaposlujemo</a>
+              <a class="nav-item nav-link" href="#">Naroči se na striženje!</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="jumbotron jumbotron-fluid bg-warning text-white text-center">
+
+        <div class="container">
+          <img src="http://cdn.onlinewebfonts.com/svg/img_62018.png" height="200" width="200" alt="Node.js">
+          <h1 class="display-2">Dobrodošli v frizerski salon Vesna!</h1>
+          <p class="lead">Po karanteni paše malo urejenosti!</p>
+        </div>
+
+      </div>
+
+      <div class="container text-muted">
+
+        <!--Cards-->
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+              <div class="card">
+                <img src="https://i.pinimg.com/originals/78/e8/e9/78e8e9ae45eb1f8646fe9b08310d128f.png" class="card-img-top img-fluid" alt="Node.js">
+                <div class="card-body text-justify">
+                  <h3 class="card-title">Odstrižimo probleme!</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+              <div class="card">
+                <img src="http://pluspng.com/img-png/barber-blade-png-barber-1200.png" class="card-img-top img-fluid" alt="Node.js">
+                <div class="card-body text-justify">
+                  <h3 class="card-title">Uredimo svoj lajf!</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+              <div class="card">
+                <img src="http://cdn.onlinewebfonts.com/svg/img_62018.png" class="card-img-top img-fluid" alt="Node.js">
+                <div class="card-body text-justify">
+                  <h3 class="card-title">Kot iz škatljice!</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+
+      </div>
+
+      <h2 class="display-4 text-center text-warning py-5">Glavne kosilnice</h2>
+      <nav class="nav nav-pills justify-content-center pb-5 flex-column flex-md-row">
+        <a class="nav-link active" href="#bm" data-toggle="tab">Betka Marjetka</a>
+        <a class="nav-link" href="#ed" data-toggle="tab">Edvard Škarjeroki</a>
+        <a class="nav-link" href="#gr" data-toggle="tab">Grim Ripper</a>
+        <a class="nav-link" href="#st" data-toggle="tab">Sweeney Todd</a>
+      </nav>
+
+      <div class="tab-content px-5 text-justify">
+        <div class="tab-pane fade show active" id="bm">
+          <h3 class="text-center">Betka Marjetka</h3>
+          <p> <span data-toggle="tooltip" title="Check Out on Google" class="text-info" data-placement="bottom">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="tab-pane fade" id="ed">
+          <h3 class="text-center">Edvard Škarjeroki</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="tab-pane fade" id="gr">
+          <h3 class="text-center">Grim Ripper</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+        <div class="tab-pane fade" id="st">
+          <h3 class="text-center">Sweeney Todd</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        </div>
+      </div>
+
   </body>
 </html>
