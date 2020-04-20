@@ -13,111 +13,20 @@
     <script src="javascript/bootstrap.js"></script>
     <script>
 
-    $(document).ready(function(){
-      $('.carousel').carousel();
-      $('[data-toggle="tooltip"]').tooltip();
-    });
+      $(window).on('load',function(){
+        $('#myModal').modal("show");
+     });
+
+     $(document).ready(function(){
+       $('.carousel').carousel();
+     });
 
     </script>
   </head>
   <body>
-
-    <!--  <nav class="navbar navbar-dark navbar-expand-md bg-dark">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">Vesna</span>
-          <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav" type="button" name="button">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="mainNav">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#">Domov</a>
-              <a class="nav-item nav-link" href="#">O Vesni</a>
-              <a class="nav-item nav-link" href="#">Trening striženja in britja</a>
-              <a class="nav-item nav-link" href="#">Zaposlujemo</a>
-              <a class="nav-item nav-link" href="#">Naroči se na striženje!</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      <div class="jumbotron jumbotron-fluid bg-warning text-white text-center">
-
-        <div class="container">
-          <img src="http://cdn.onlinewebfonts.com/svg/img_62018.png" height="200" width="200" alt="Node.js">
-          <h1 class="display-2">Dobrodošli v frizerski salon Vesna!</h1>
-          <p class="lead">Po karanteni paše malo urejenosti!</p>
-        </div>
-
-      </div>
-
-      <div class="container text-muted">
-
-        Cards
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
-              <div class="card">
-                <img src="https://i.pinimg.com/originals/78/e8/e9/78e8e9ae45eb1f8646fe9b08310d128f.png" class="card-img-top img-fluid" alt="Node.js">
-                <div class="card-body text-justify">
-                  <h3 class="card-title">Odstrižimo probleme!</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-              </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-              <div class="card">
-                <img src="http://pluspng.com/img-png/barber-blade-png-barber-1200.png" class="card-img-top img-fluid" alt="Node.js">
-                <div class="card-body text-justify">
-                  <h3 class="card-title">Uredimo svoj lajf!</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-              </div>
-          </div>
-
-          <div class="col-md-6 col-lg-4">
-              <div class="card">
-                <img src="http://cdn.onlinewebfonts.com/svg/img_62018.png" class="card-img-top img-fluid" alt="Node.js">
-                <div class="card-body text-justify">
-                  <h3 class="card-title">Kot iz škatljice!</h3>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-              </div>
-          </div>
-        </div>
-
-      </div>
-
-      <h2 class="display-4 text-center text-warning py-5">Glavne kosilnice</h2>
-      <nav class="nav nav-pills justify-content-center pb-5 flex-column flex-md-row">
-        <a class="nav-link active" href="#bm" data-toggle="tab">Betka Marjetka</a>
-        <a class="nav-link" href="#ed" data-toggle="tab">Edvard Škarjeroki</a>
-        <a class="nav-link" href="#gr" data-toggle="tab">Grim Ripper</a>
-        <a class="nav-link" href="#st" data-toggle="tab">Sweeney Todd</a>
-      </nav>
-
-      <div class="tab-content px-5 text-justify">
-        <div class="tab-pane fade show active" id="bm">
-          <h3 class="text-center">Betka Marjetka</h3>
-          <p> <span data-toggle="tooltip" title="Check Out on Google" class="text-info" data-placement="bottom">Lorem Ipsum</span> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-        <div class="tab-pane fade" id="ed">
-          <h3 class="text-center">Edvard Škarjeroki</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-        <div class="tab-pane fade" id="gr">
-          <h3 class="text-center">Grim Ripper</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-        <div class="tab-pane fade" id="st">
-          <h3 class="text-center">Sweeney Todd</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-        </div>
-      </div>
--->
-
       <nav class="navbar navbar-expand-md navbar-light bg-light">
         <img src="https://image.flaticon.com/icons/png/512/547/547897.png" width="auto" height="30" class="d-inline-block align-top" alt="">
-        <a class="navbar-brand pl-2" href="#">Brivec</a>
+        <a class="navbar-brand pl-2 font-weight-bold" href="#">Brivec</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -130,20 +39,20 @@
           Kaj nudimo
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Britje</a>
-          <a class="dropdown-item" href="#">Striženje</a>
+          <a class="dropdown-item" href="#kajNudimo">Britje</a>
+          <a class="dropdown-item" href="#kajNudimo">Striženje</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Knjiga pohval in pritožb</a>
+          <a class="dropdown-item" href="#kajNudimo">Knjiga pohval in pritožb</a>
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Naroči se</a>
+        <a class="nav-link" href="#narociSe">Naroči se</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">FAQ</a>
+        <a class="nav-link" href="#faq">FAQ</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">O nas</a>
+        <a class="nav-link" href="#oNas">O nas</a>
       </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
@@ -162,21 +71,21 @@
                 <div class="carousel-item active">
                     <img class="d-block w-100 " src="https://cdn.pixabay.com/photo/2017/03/22/17/37/barber-2165745_1280.jpg" alt="First slide"  height="600px">
                     <div class="carousel-caption d-md-block">
-                      <h5 class="display-4">Prenovljeni studio!</h5>
+                      <h5 class="display-4 font-weight-bold">Prenovljeni studio!</h5>
                       <p class="lead">Počutite se kot doma v naši prenovljeni Brivnici.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100 " src="https://cdn.pixabay.com/photo/2019/09/17/18/54/barbershop-4484300_1280.jpg" alt="Second slide"  height="600px">
                     <div class="carousel-caption d-md-block">
-                      <h5 class="display-4 ">Izkušeni zaposleni!</h5>
+                      <h5 class="display-4 font-weight-bold">Izkušeni zaposleni!</h5>
                       <p class="lead">Naš kolektiv sestavlja ekipa izkušenih strokovnjakov.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100 " src="https://cdn.pixabay.com/photo/2018/02/22/17/09/barber-shop-3173422_1280.jpg" alt="Third slide"  height="600px">
                     <div class="carousel-caption d-md-block">
-                      <h5 class="display-4">Sledimo trendom!</h5>
+                      <h5 class="display-4 font-weight-bold">Sledimo trendom!</h5>
                       <p class="lead">V brivnici redno spremljamo kaj je najbolj zaželjeno in svoje delo prilagodimo trendom.</p>
                     </div>
                 </div>
@@ -191,7 +100,7 @@
                 </a>
               </div>
 
-              <div class="container-fluid ">
+              <div id="kajNudimo" class="container-fluid">
                 <div class="row justify-content-center">
                   <div class="card-deck pb-5 pt-5">
                     <div class="col-md-6 col-lg-4 mt-md-3">
@@ -205,7 +114,7 @@
                     </div>
 
                     <div class="col-md-6 col-lg-4 mt-3">
-                      <div class="card shadow">
+                      <div  class="card shadow">
                         <div class="card-body">
                           <h5 class="card-title float-left">Britje</h5>
                           <img src="https://image.flaticon.com/icons/png/512/1216/1216432.png" width="auto" height="30" class=" align-self-center float-right" alt="Britje">
@@ -228,10 +137,10 @@
                 </div>
               </div>
 
-              <div class="container-fluid bg-dark text-white">
-                <div class="row text-center justify-content-center py-5 px-3">
-                  <h1 class="display-4 col-md-12">Naroči se</h1>
-                  <div class="col-md-6 py-5">
+              <div id="narociSe" class="container-fluid bg-dark text-white">
+                <div class="row text-center justify-content-around">
+                  <h1 class="display-4 col-md-12 pt-5 font-weight-bold">Naroči se</h1>
+                  <div class="col-md-5 py-5">
                     <form>
                       <div class="form-group">
                         <label for="nameSurname">Ime in Priimek</label>
@@ -271,8 +180,131 @@
                     </form>
                   </div>
 
-                  <div class="col-md-6">
+                  <div class="col-md-5 py-5 my-5">
+                    <table class="table table-bordered table-dark table-striped rounded">
+                      <thead>
+                        <tr class="bg-info">
+                          <th scope="col">Dan</th>
+                          <th scope="col">Delovne ure</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Ponedeljek</td>
+                          <td>8.00 - 16.00</td>
+                        </tr>
+                        <tr>
+                          <td>Torek</td>
+                          <td>10.00 - 18.00</td>
+                        </tr>
+                        <tr>
+                          <td>Sreda</td>
+                          <td>8.00 - 16.00</td>
+                        </tr>
+                        <tr>
+                          <td>Četrtek</td>
+                          <td>8.00 - 16.00</td>
+                        </tr>
+                        <tr>
+                          <td>Petek</td>
+                          <td>12.00 - 16.00</td>
+                        </tr>
+                        <tr>
+                          <td>Sobota</td>
+                          <td>8.00 - 16.00</td>
+                        </tr>
+                        <tr>
+                          <td>Nedelja</td>
+                          <td>8.00 - 12.00</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <p class="text-left ml-4 pt-2">* Ob praznikih velja nedeljski urnik.</p>
+                  </div>
+                </div>
+              </div>
 
+              <div id="faq" class="container-fluid bg-info">
+                <div class="row justify-content-center text-center">
+                  <div class="col-md-10">
+                    <h1 class="display-3  font-weight-bold pt-4">FAQ</h1>
+                    <p class="display-4 font-weight-light pb-4">(pogosta vprašanja)</p>
+                    <div class="card text-white bg-dark mb-3 px-3 shadow-lg">
+                      <div class="card-header font-weight-bold">Kakšen je salon in ekipa?</div>
+                      <div class="card-body text-left ">
+                        <p class="card-text">Salon je prostoren in domač in v njem delajo prijazne in sposobne frizerke, ki oblikujejo pričeske z občutkom in domišljijo.</p>
+                        <p class="card-text">Smo relativno mlad kolektiv, vedno nasmejani, prijazni. Imamo dolgoletne izkušnje s profesionalno lasno kozmetiko Schwarzkopf, v dogovoru z dolgoletnim partnerjem Hair Beauty d.o.o. smo pa letos septembra začeli delati s profesionalno lasno kozmetiko Indola, katero distribuirajo. Imamo tudi brivce.</p>
+                      </div>
+                    </div>
+                    <div class="card bg-dark text-white px-3 my-5">
+                      <div class="card-body text-left">
+                        <p class="card-text">Ali sprejemate hišne ljubljenčke?</p>
+                      </div>
+                    </div>
+
+                    <div class="card bg-dark text-white px-3 my-5">
+                      <div class="card-body text-left">
+                        <p class="card-text">Imate kakšne nagrade s tekmovanj?</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="oNas" class="container-fluid bg-light">
+                <div class="container">
+                  <div class="row justify-content-center text-left py-5">
+                    <div class="col-4">
+                      <h3 class="font-weight-bold">Kontakt</h3>
+                      <p>Frizer Mirko s.p.</p>
+                      <p>Davčna št. : 324324234</p>
+                      <p>Frizerska ulica 5, 1000 Ljubljana</p>
+                      <p>Tel. : 01/345483119</p>
+                      <p>Email : brivec@f-mirko.com</p>
+                    </div>
+
+                    <div class="col-4  d-flex justify-content-center my-auto py-5">
+                      <img src="http://www.pngall.com/wp-content/uploads/2016/05/Certified-Stamp.png" alt="Quality" height="150em">
+                    </div>
+
+                    <div class="col-4 text-right">
+                      <h3 class="font-weight-bold">Navigacija</h3>
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#kajNudimo">Kaj nudimo</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#narociSe">Naroči se</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#faq">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#oNas">O nas</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="myModal" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title px-5 font-weight-bold">O nas</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body d-flex flex-column">
+                      <p class="px-5 mt-3">Smo relativno mlad kolektiv, vedno nasmejani, prijazni. Imamo dolgoletne izkušnje s profesionalno lasno kozmetiko Schwarzkopf, v dogovoru z dolgoletnim partnerjem Hair Beauty d.o.o. smo pa letos septembra začeli delati s profesionalno lasno kozmetiko Indola, katero distribuirajo. Imamo tudi brivce.</p>
+                      <p class="px-5">Salon je prostoren in domač in v njem delajo prijazne in sposobne frizerke, ki oblikujejo pričeske z občutkom in domišljijo.</p>
+                      <p class="px-5 pb-3">Pri nas je dobrodošel vsak, prepričani smo da bomo želji vsakega posameznika lahko ustregli v našem delovnem času. Pravijo, da ni pomembna dolžina las temveč šteje le urejena pričeska.</p>
+                      <img class="mx-auto mb-3" src="http://icons.iconarchive.com/icons/grafikartes/flat-retro-modern/512/mail-icon.png" alt="mail" height="100px" width="100px">
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
                   </div>
                 </div>
               </div>
